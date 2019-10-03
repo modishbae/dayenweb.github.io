@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bekgron.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	content: "";
+    clear: both;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 75px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1% solid transparent;
+	transition: 0.3s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+	color: black;
+}
+
+.logo img{
+	float: left;
+	width: 80px;
+	height: auto;
+	margin-top: 25px;
+	margin-left: 75px;
+}
+
+.main{
+	max-width:  1200px;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 70px;
+}
+
+@media (max-width: 600px) {
+  header {
+	display:table;
+    width: 100%;
+    height: auto;
+  }
+}
